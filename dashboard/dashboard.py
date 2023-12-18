@@ -4,8 +4,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Menyiapkan data
-df_day = pd.read_csv("./dashboard/data/day.csv")
-df_hour = pd.read_csv("./dashboard/data/hour.csv")
+df_day = pd.read_csv("data/day.csv")
+df_hour = pd.read_csv("data/hour.csv")
 bike_combine = df_day.merge(df_hour, on='dteday', how='inner', suffixes=('_daily', '_hourly'))
 
 # Mengatur judul dan deskripsi aplikasi
